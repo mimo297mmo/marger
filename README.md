@@ -73,20 +73,17 @@ turso db tokens create <name>     # TURSO_AUTH_TOKEN
 
 ## النشر على Vercel
 
-1. ارفع المستودع إلى GitHub (أو استخدم هذا المستودع مباشرة).
-2. في Vercel: **Add New → Project → Import** المستودع.
-3. أضف متغيرات البيئة الثلاثة في **Settings → Environment Variables**:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmimo297mmo%2Fmarger&env=TURSO_DATABASE_URL,TURSO_AUTH_TOKEN,MERGER_API_BASE&project-name=mcp-media-generator)
+
+الخطوات اليدوية:
+
+1. في Vercel: **Add New → Project → Import** مستودع `mimo297mmo/marger`.
+2. أضف متغيرات البيئة في **Settings → Environment Variables**:
    - `TURSO_DATABASE_URL`
    - `TURSO_AUTH_TOKEN`
    - `MERGER_API_BASE`
    - (اختياري: `MCP_ACCESS_TOKEN`)
-4. **Deploy** — كل شيء يعمل عبر HTTP (libSQL) وبدون أي ملفات محلية.
-
-أو بزر واحد بعد ضبط المستودع:
-
-```md
-https://vercel.com/new/clone?repository-url=<رابط المستودع>&env=TURSO_DATABASE_URL,TURSO_AUTH_TOKEN,MERGER_API_BASE
-```
+3. **Deploy** — كل شيء يعمل عبر HTTP (libSQL) وبدون أي ملفات محلية.
 
 ## الربط من عملاء MCP
 
